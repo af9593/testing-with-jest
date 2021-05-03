@@ -2,4 +2,4 @@
 A Jest + npm lab session
 
 ## More information
-nvm
+NVM
