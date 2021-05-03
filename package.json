@@ -1,0 +1,22 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "A Jest + npm lab session",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/af9593/testing-with-jest.git"
+  },
+  "author": "Moustafa Allouhaibi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/af9593/testing-with-jest/issues"
+  },
+  "homepage": "https://github.com/af9593/testing-with-jest#readme"
+}
