@@ -32,8 +32,8 @@ describe('Clicking "Pusha till stacken"', () => {
 		await alert.accept();
 	});
 
-	it('should display the data at the top of the stack',  () => {
-		let stack =  driver.findElement(By.id('top_of_stack')).getText();
+	it('should display the data at the top of the stack',  async () => {
+		let stack =  await driver.findElement(By.id('top_of_stack')).getText();
 		expect(stack).toEqual("Bananer");
 	})
 });
@@ -41,13 +41,13 @@ describe('Clicking "Pusha till stacken"', () => {
 describe('Clicking "Poppa stacken "', () => {
 	it('should alert that the element has been removed from the stack', async () => {
 		
-		let pop = await driver.findElement(By.id('peek'));
+		let pop = await driver.findElement(By.id('pop'));
 		await pop.click();
 
-		let alertText = await driver.switchTo().alert().getText()
-
+		let alert = await driver.switchTo().alert();
+		let alertText = await alert.getText()
 		expect(alertText).toEqual("Tog bort Bananer");
-
+		await alert.accept()
 	})
 })
 describe('Clicking "Vad finns överst för stacken?"', () => {

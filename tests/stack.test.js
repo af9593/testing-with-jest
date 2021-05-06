@@ -25,9 +25,9 @@ test('peek on stack with two or more elements returns the top element', () => {
 test('pop on stack returns the last element and removes it', () => {
     stack.push('Post pop');
     stack.push('Popped Element');
-
-    expect(stack.pop()).toBeDefined();
-    expect(stack.pop()).toBe('Popped Element');
+    var popped = stack.pop()
+    expect(popped).toBeDefined();
+    expect(popped).toBe('Popped Element');
     expect(stack.peek()).toBeDefined();
     expect(stack.peek()).toBe('Post pop');
 });
