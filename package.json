@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/af9593/testing-with-jest#readme",
   "dependencies": {
+    "chromedriver": "^90.0.0",
     "geckodriver": "^1.22.3",
     "selenium-webdriver": "^4.0.0-beta.3",
     "underscore": "^1.13.1"

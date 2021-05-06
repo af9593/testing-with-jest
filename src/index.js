@@ -9,7 +9,7 @@ window.onload = function () {
     var display = document.getElementById('top_of_stack');
 
     pop.addEventListener("click", function() {
-        var text = "Tog bort"  + stack.pop();
+        var text = "Tog bort "  + stack.pop();
         alert(text);
     });
 
